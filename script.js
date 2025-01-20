@@ -8,6 +8,14 @@ function createListElement() {
   li.appendChild(document.createTextNode(input.value));
   ul.appendChild(li);
   input.value = "";
+
+  // Mark it as Done
+  function crossOut() {
+    li.classList.toggle("done");
+  }
+
+  li.addEventListener("click", crossOut);
+  // end of Mark it as Done
 }
 
 function addListAfterClick() {
