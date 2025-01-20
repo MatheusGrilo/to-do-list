@@ -1,10 +1,40 @@
 <html>
   <head>
     <title>MatheusGrilo - To-Do List</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
-    Simple HTML file, with style.css and script.js imported, for first commit
+    <div class="container">
+      <div class="row">
+        <div class="startText col-12">
+          <h1>
+            To-Do List hosted on
+            <a
+              href="https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+              target="_blank"
+              >GitHub Pages</a
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="textsAboveTasks col-12"></div>
+      <p id="textOne">
+        Enter a text, press enter, and save it in localStorage.
+      </p>
+      <p id="textTwo">You can click on item, to mark it as Done.</p>
+      <p id="textThree">Also click on "X" to remove the item.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <input type="text" id="task" placeholder="New item..." />
+        <button onclick="addTask()">Button</button>
+        <ul id="tasks"></ul>
+      </div>
+    </div>
   </body>
 </html>
