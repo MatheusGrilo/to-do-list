@@ -49,6 +49,26 @@ input {
   border: none;
 }
 
+#enterButton {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #04a1bf;
+  background-color: #554396;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#enterButton:hover {
+  background-color: #3f4faa;
+  color: #f7b529;
+}
+
 ul {
   text-align: left;
   margin-top: 20px;
@@ -71,6 +91,15 @@ li {
   -o-transition: all 0.5 ease;
 }
 
+li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  float: right;
+  color: #700202;
+  font-weight: 800;
+}
+
 li:hover {
   background: #554396;
 }
@@ -78,4 +107,8 @@ li:hover {
 .done {
   background: #00891e !important;
   color: #d3d3d3;
+}
+
+.delete {
+  display: none;
 }

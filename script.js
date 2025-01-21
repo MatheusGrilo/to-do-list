@@ -1,4 +1,4 @@
-var enterButton = document.getElementById("enter");
+var enterButton = document.getElementById("enterButton");
 var input = document.getElementById("itemInput");
 var ul = document.querySelector("ul");
 var item = document.getElementsByTagName("li");
@@ -16,6 +16,17 @@ function createListElement() {
 
   li.addEventListener("click", crossOut);
   // end of Mark it as Done
+
+  // start Delete button
+  var deleteButton = document.createElement("button");
+  deleteButton.appendChild(document.createTextNode("X"));
+  li.appendChild(deleteButton);
+  deleteButton.addEventListener("click", deleteListItem);
+  // end of Delete button
+
+  function deleteListItem() {
+    li.classList.add("delete");
+  }
 }
 
 function addListAfterClick() {
